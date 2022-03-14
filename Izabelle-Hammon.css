@@ -1107,7 +1107,7 @@ input[type="checkbox"] {
     display: block;
     width: 100%;
     height: auto;
-    padding: 10px
+    padding-top: 20px
 }
 input[type="checkbox"]:checked {
 	content: url('https://static.wixstatic.com/media/4991c8_acb8ae967fae452292fc46cbf7bf3c37~mv2.png');	
