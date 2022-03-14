@@ -1105,9 +1105,9 @@
 input[type="checkbox"] {
     content: url('https://static.wixstatic.com/media/4991c8_9202ec099c884ca0a3af350a869aae3e~mv2.jpg');
     display: block;
-    width: 95%;
-    height: fluid;
-    padding: 0
+    width: 100%;
+    height: auto;
+    padding: 10px
 }
 input[type="checkbox"]:checked {
 	content: url('https://static.wixstatic.com/media/4991c8_acb8ae967fae452292fc46cbf7bf3c37~mv2.png');	
