@@ -258,7 +258,7 @@
 
   .u-section-2 .u-repeater-1 {
     min-height: 260px;
-    grid-auto-columns: calc(33.3333% - 17.3333px);
+    grid-gap: 26px;
   }
 
   .u-section-2 .u-container-layout-1 {
@@ -363,8 +363,7 @@
   .u-section-2 .u-repeater-1 {
     grid-template-columns: 100%;
     min-height: 439px;
-    grid-gap: 9px 9px;
-    grid-auto-columns: 100%;
+    grid-gap: 9px;
   }
 
   .u-section-2 .u-container-layout-1 {
@@ -723,7 +722,7 @@
 .u-section-4 .u-image-1 {
   width: 184px;
   height: 184px;
-  background-image: url("images/mv250.jpg");
+  background-image: url("https://static.wixstatic.com/media/4991c8_a39554acc38d4e268478c689db34ab2c~mv2.jpg");
   background-position: 50% 50%;
   margin: 44px auto 0;
 }
@@ -753,7 +752,7 @@
 .u-section-4 .u-image-2 {
   width: 184px;
   height: 184px;
-  background-image: url("images/mv219.jpg");
+  background-image: url("https://static.wixstatic.com/media/4991c8_814f7b53125a44548ee795be28adb523~mv2.jpg");
   background-position: 50% 50%;
   margin: 44px auto 0;
 }
@@ -784,7 +783,7 @@
 .u-section-4 .u-image-3 {
   width: 184px;
   height: 184px;
-  background-image: url("images/mv251.jpg");
+  background-image: url("https://static.wixstatic.com/media/4991c8_19d8a1f723a94582884b0e5bc5f7418f~mv2.jpg");
   background-position: 50% 50%;
   margin: 44px auto 0;
 }
@@ -815,8 +814,8 @@
 .u-section-4 .u-image-4 {
   width: 184px;
   height: 184px;
-  background-image: url("images/mv255.jpg");
-  background-position: 43.03% 50%;
+  background-image: url("https://static.wixstatic.com/media/4991c8_fedd8d9c7a514f1cadbb04262b313692~mv2.jpg");
+  background-position: 41.62% 50%;
   margin: 44px auto 0;
 }
 
@@ -846,7 +845,7 @@
 .u-section-4 .u-image-5 {
   width: 184px;
   height: 184px;
-  background-image: url("images/mv253.jpg");
+  background-image: url("https://static.wixstatic.com/media/4991c8_7bc27c8cff9a4e619e0930c16b374e02~mv2.jpg");
   background-position: 50% 50%;
   margin: 44px auto 0;
 }
@@ -877,8 +876,8 @@
 .u-section-4 .u-image-6 {
   width: 184px;
   height: 184px;
-  background-image: url("images/mv256.jpg");
-  background-position: 80.47% 50%;
+  background-image: url("https://static.wixstatic.com/media/4991c8_fddff8dbf06642a3a100c15ac69d5045~mv2.jpg");
+  background-position: 50% 50%;
   margin: 44px auto 0;
 }
 
@@ -1098,7 +1097,7 @@
 
   .u-section-4 .u-repeater-1 {
     min-height: 755px;
-    grid-auto-columns: calc(33.3333% - 13.3333px);
+    grid-gap: 20px;
   }
 
   .u-section-4 .u-container-layout-1 {
@@ -1382,7 +1381,6 @@
   .u-section-4 .u-repeater-1 {
     min-height: 937px;
     grid-template-columns: calc(50% - 9.99997px) calc(50% - 9.99997px);
-    grid-auto-columns: calc(50% - 9.99997px);
   }
 
   .u-section-4 .u-container-layout-1 {
@@ -1449,12 +1447,11 @@
 .u-section-5 .u-layout-wrap-1 {
   margin-top: 57px;
   margin-bottom: 0;
-  min-height: 600px;
 }
 
 .u-section-5 .u-image-1 {
   min-height: 610px;
-  background-image: linear-gradient(0deg, rgba(21,54,48,0.95), rgba(21,54,48,0.95)), url("images/mv270.jpg");
+  background-image: linear-gradient(0deg, rgba(21,54,48,0.95), rgba(21,54,48,0.95)), url("https://static.wixstatic.com/media/4991c8_b924bac1b985426c808efef93d722232~mv2.jpg");
   background-position: 50% 50%;
 }
 
@@ -1485,7 +1482,7 @@
 
 .u-section-5 .u-image-2 {
   min-height: 305px;
-  background-image: url("images/mv221.jpg");
+  background-image: url("https://static.wixstatic.com/media/4991c8_6cb5cef8e88942da8c0c2c1f06f72e48~mv2.jpg");
   background-position: 50% 50%;
 }
 
@@ -1495,7 +1492,7 @@
 
 .u-section-5 .u-image-3 {
   min-height: 305px;
-  background-image: url("images/mv234.jpg");
+  background-image: url("https://static.wixstatic.com/media/4991c8_7e517a0f97bc4682ba7a04f896244858~mv2.jpg");
   background-position: 50% 50%;
 }
 
@@ -1518,7 +1515,7 @@
 
 .u-section-5 .u-image-4 {
   min-height: 610px;
-  background-image: linear-gradient(0deg, rgba(21,54,48,0.95), rgba(21,54,48,0.95)), url("images/mv218.jpg");
+  background-image: linear-gradient(0deg, rgba(21,54,48,0.95), rgba(21,54,48,0.95)), url("https://static.wixstatic.com/media/4991c8_0bd4651259744a4abe68878daae9c8eb~mv2.jpg");
   background-position: 50% 50%;
 }
 
@@ -1541,7 +1538,7 @@
 
 .u-section-5 .u-image-5 {
   min-height: 305px;
-  background-image: url("images/mv269.jpg");
+  background-image: url("https://static.wixstatic.com/media/4991c8_bffb06ac100c4929886fff29f7da4b66~mv2.jpg");
   background-position: 50% 50%;
 }
 
@@ -1551,7 +1548,7 @@
 
 .u-section-5 .u-image-6 {
   min-height: 305px;
-  background-image: url("images/mv267.jpg");
+  background-image: url("https://static.wixstatic.com/media/4991c8_504bf25b6eeb40fea62c634dfa78dde1~mv2.jpg");
   background-position: 50% 50%;
 }
 
@@ -1561,7 +1558,7 @@
 
 .u-section-5 .u-image-7 {
   min-height: 305px;
-  background-image: url("images/mv217.jpg");
+  background-image: url("https://static.wixstatic.com/media/4991c8_523f295fa1bf4d2583ae1d74c5ae074b~mv2.jpg");
   background-position: 50% 50%;
 }
 
@@ -1584,8 +1581,8 @@
 
 .u-section-5 .u-image-8 {
   min-height: 610px;
-  background-image: linear-gradient(0deg, rgba(21,54,48,0.95), rgba(21,54,48,0.95)), url("images/mv271.jpg");
-  background-position: 78.85% 50%;
+  background-image: linear-gradient(0deg, rgba(21,54,48,0.95), rgba(21,54,48,0.95)), url("https://static.wixstatic.com/media/4991c8_21cafff56b6945c6912d4a13a6f836e1~mv2.jpg");
+  background-position: 79.74% 50%;
 }
 
 .u-section-5 .u-container-layout-11 {
@@ -1607,7 +1604,7 @@
 
 .u-section-5 .u-image-9 {
   min-height: 305px;
-  background-image: url("images/mv265.jpg");
+  background-image: url("https://static.wixstatic.com/media/4991c8_a39554acc38d4e268478c689db34ab2c~mv2.jpg");
   background-position: 50% 50%;
 }
 
@@ -1625,7 +1622,7 @@
 
 .u-section-5 .u-image-10 {
   min-height: 305px;
-  background-image: url("images/mv262.jpg");
+  background-image: url("https://static.wixstatic.com/media/4991c8_f909a8f9a02e4a4a8dd8022c1fd94407~mv2.jpg");
   background-position: 50% 50%;
 }
 
@@ -1635,7 +1632,7 @@
 
 .u-section-5 .u-image-11 {
   min-height: 305px;
-  background-image: url("images/mv264.jpg");
+  background-image: url("https://static.wixstatic.com/media/4991c8_5634abb50289487d84f08e9d281968e1~mv2.jpg");
   background-position: 50% 50%;
 }
 
@@ -1654,7 +1651,6 @@
 
   .u-section-5 .u-layout-wrap-1 {
     margin-top: 20px;
-    min-height: 335px;
   }
 
   .u-section-5 .u-image-1 {
@@ -1793,7 +1789,6 @@
 
   .u-section-5 .u-layout-wrap-1 {
     margin-top: 50px;
-    min-height: 866px;
   }
 
   .u-section-5 .u-image-1 {
@@ -1890,7 +1885,6 @@
 
   .u-section-5 .u-layout-wrap-1 {
     margin-top: 75px;
-    min-height: 1100px;
   }
 
   .u-section-5 .u-image-1 {
@@ -2103,7 +2097,6 @@
 
   .u-section-5 .u-layout-wrap-1 {
     margin-top: 35px;
-    min-height: 556px;
   }
 
   .u-section-5 .u-image-1 {
