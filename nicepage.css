@@ -37874,6 +37874,71 @@ a.u-link.u-text-hover-grey-90:hover {
 
 /*begin-variables sitestylecss*/
 
+    .u-custom-color-18,
+        .u-body.u-custom-color-18,
+        section.u-custom-color-18:before,
+        .u-custom-color-18 > .u-container-layout:before,
+        .u-custom-color-18 > .u-inner-container-layout:before,
+        .u-custom-color-18.u-sidenav:before,
+        .u-container-layout.u-container-layout.u-custom-color-18:before,
+        .u-table-alt-custom-color-18 tr:nth-child(even)
+        {
+            color: #ffffff;
+            background-color: #283635;
+        }
+
+        .u-button-style.u-custom-color-18,
+        .u-button-style.u-custom-color-18[class*="u-border-"]
+        {
+            color: #ffffff !important;
+            background-color: #283635 !important;
+        }
+
+        .u-button-style.u-custom-color-18:hover,
+        .u-button-style.u-custom-color-18[class*="u-border-"]:hover,
+        .u-button-style.u-custom-color-18:focus,
+        .u-button-style.u-custom-color-18[class*="u-border-"]:focus,
+        .u-button-style.u-button-style.u-custom-color-18:active,
+        .u-button-style.u-button-style.u-custom-color-18[class*="u-border-"]:active,
+        .u-button-style.u-button-style.u-custom-color-18.active,
+        .u-button-style.u-button-style.u-custom-color-18[class*="u-border-"].active,
+        li.active > .u-button-style.u-button-style.u-custom-color-18,
+        li.active > .u-button-style.u-button-style.u-custom-color-18[class*="u-border-"]
+        {
+            color: #ffffff !important;
+            background-color: #243130 !important;
+        }
+
+        .u-hover-custom-color-18:hover,
+        .u-hover-custom-color-18[class*="u-border-"]:hover,
+        .u-hover-custom-color-18:focus,
+        .u-hover-custom-color-18[class*="u-border-"]:focus,
+        .u-active-custom-color-18.u-active.u-active,
+        .u-active-custom-color-18[class*="u-border-"].u-active.u-active,
+        a.u-button-style.u-hover-custom-color-18:hover,
+        a.u-button-style.u-hover-custom-color-18[class*="u-border-"]:hover,
+        a.u-button-style:hover > .u-hover-custom-color-18,
+        a.u-button-style:hover > .u-hover-custom-color-18[class*="u-border-"],
+        a.u-button-style.u-hover-custom-color-18:focus,
+        a.u-button-style.u-hover-custom-color-18[class*="u-border-"]:focus,
+        a.u-button-style.u-button-style.u-active-custom-color-18:active,
+        a.u-button-style.u-button-style.u-active-custom-color-18[class*="u-border-"]:active,
+        a.u-button-style.u-button-style.u-active-custom-color-18.active,
+        a.u-button-style.u-button-style.u-active-custom-color-18[class*="u-border-"].active,
+        a.u-button-style.u-button-style.active > .u-active-custom-color-18,
+        a.u-button-style.u-button-style.active > .u-active-custom-color-18[class*="u-border-"],
+        li.active > a.u-button-style.u-button-style.u-active-custom-color-18,
+        li.active > a.u-button-style.u-button-style.u-active-custom-color-18[class*="u-border-"],
+        input.u-field-input.u-field-input.u-active-custom-color-18:checked
+        {
+            color: #ffffff !important;
+            background-color: #283635 !important;
+        }
+
+        a.u-link.u-hover-custom-color-18:hover {
+            color: #283635 !important;
+        }
+
 .u-custom-color-1,
         .u-body.u-custom-color-1,
         section.u-custom-color-1:before,
