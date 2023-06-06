@@ -827,19 +827,16 @@
 }
 
 @media (max-width: 575px) {
-  .u-section-14 .u-sheet-1 {
-    min-height: 146px;
-  }
-
   .u-section-14 .u-text-1 {
-    width: 330px;
-    margin-top: 75px;
-    margin-left: 24px;
-    margin-right: 24px;
+    width: auto;
+    margin-top: 72px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .u-section-14 .u-line-1 {
     width: 192px;
+    margin-top: 23px;
   }
 }.u-section-15 .u-video-1 {
   min-height: 567px;
