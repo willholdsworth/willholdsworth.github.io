@@ -12,18 +12,5 @@
         "6A:A6:8B:41:C2:DE:06:1A:4E:29:AE:0B:6D:BD:5B:0C:E4:17:3E:84:B7:9D:68:FA:B7:A9:50:CB:C0:D2:38:A7"
       ]
     }
-  },
-  {
-    "relation": [
-      "delegate_permission/common.handle_all_urls",
-      "delegate_permission/common.get_login_creds"
-    ],
-    "target": {
-      "namespace": "android_app",
-      "package_name": "com.willholdsworth.www.budgetbase",
-      "sha256_cert_fingerprints": [
-        "6A:A6:8B:41:C2:DE:06:1A:4E:29:AE:0B:6D:BD:5B:0C:E4:17:3E:84:B7:9D:68:FA:B7:A9:50:CB:C0:D2:38:A7"
-      ]
-    }
   }
 ]
