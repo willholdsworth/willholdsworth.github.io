@@ -27,6 +27,7 @@
 
 .u-section-1 .u-text-2 {
   font-size: 3rem;
+  background-image: none;
   margin: 45px 586px 0 0;
 }
 
@@ -38,6 +39,7 @@
 
 .u-section-1 .u-btn-1 {
   background-image: none;
+  font-size: 1.125rem;
   padding: 0;
 }
 
@@ -60,10 +62,6 @@
 
   .u-section-1 .u-text-2 {
     margin-right: 356px;
-  }
-
-  .u-section-1 .u-btn-1 {
-    font-size: 1.125rem;
   }
 }
 
@@ -106,9 +104,9 @@
   }
 
   .u-section-1 .u-text-2 {
-    font-size: 1.875rem;
     width: auto;
     margin-right: 88px;
+    font-size: 1.875rem;
   }
 
   .u-section-1 .u-text-3 {
