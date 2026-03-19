@@ -1059,7 +1059,7 @@ footer span { font-size: .5rem; letter-spacing: .16em; text-transform: uppercase
       </a>
       <a href="/files/WillHoldsworthCV.pdf" target="_blank" class="c-row">
         <div><span class="c-lbl">Resume</span><span class="c-val">Download CV</span></div>
-        <span class="c-arr"><svg width="10" height="10" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:middle;stroke:currentColor;"><line x1="6.5" y1="1" x2="6.5" y2="12" stroke-width="1.5" stroke-linecap="round"/><polyline points="2,8.5 6.5,12 11,8.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="c-arr"><svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:middle;stroke:currentColor;"><line x1="6.5" y1="1" x2="6.5" y2="12" stroke-width="1.5" stroke-linecap="round"/><polyline points="2,8.5 6.5,12 11,8.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       </a>
     </div>
   </div>
@@ -1216,7 +1216,7 @@ function syncVideoRows() {
     if (!mhbRow || !mhbVidCol) return;
     const rowH = mhbRow.offsetHeight;
     const maxW = mhbRow.offsetWidth * 0.45;
-    const w = Math.min(rowH * (9/16), maxW);
+    const w = Math.min(rowH * 1, maxW);
     if (w > 0) {
       mhbVidCol.style.width = w + 'px';
     }
