@@ -513,7 +513,7 @@ footer span { font-size: .5rem; letter-spacing: .16em; text-transform: uppercase
   }
 }
 @media (max-width: 520px) {
-  .n-links { gap: 1.5rem; }
+  .n-links { gap: 1.2rem; }
   .g-phones .c { width: 100%; }
 }
 .back-top {
@@ -543,7 +543,7 @@ footer span { font-size: .5rem; letter-spacing: .16em; text-transform: uppercase
     <a href="#work" onclick="scrollTo_(event,'work')">Work</a>
     <a href="#about" onclick="scrollTo_(event,'about')">About</a>
     <a href="#contact" onclick="scrollTo_(event,'contact')">Contact</a>
-    <a href="/files/WillHoldsworthCV.pdf" target="_blank" style="display:inline-flex;align-items:center;gap:.35rem;">CV <svg width="8" height="8" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" style="stroke:currentColor;"><line x1="1" y1="9" x2="9" y2="1" stroke-width="1.4" stroke-linecap="round"/><polyline points="3.5,1 9,1 9,6.5" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <a href="/files/WillHoldsworthCV.pdf" target="_blank" style="display:inline-flex;align-items:center;gap:.35rem;">CV <svg width="8" height="8" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" style="stroke:currentColor;"><line x1="1" y1="9" x2="9" y2="1" stroke-width="1" stroke-linecap="round"/><polyline points="3.5,1 9,1 9,6.5" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
   </div>
 </nav>
 
@@ -1059,7 +1059,7 @@ footer span { font-size: .5rem; letter-spacing: .16em; text-transform: uppercase
       </a>
       <a href="/files/WillHoldsworthCV.pdf" target="_blank" class="c-row">
         <div><span class="c-lbl">Resume</span><span class="c-val">Download CV</span></div>
-        <span class="c-arr"><svg width="10" height="10" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:middle;stroke:currentColor;"><line x1="6.5" y1="1" x2="6.5" y2="12" stroke-width="1.5" stroke-linecap="round"/><polyline points="2,8 6.5,12.5 11,8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="c-arr"><svg width="10" height="10" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:middle;stroke:currentColor;"><line x1="6.5" y1="1" x2="6.5" y2="12" stroke-width="1.5" stroke-linecap="round"/><polyline points="2,8.5 6.5,12 11,8.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       </a>
     </div>
   </div>
@@ -1068,7 +1068,7 @@ footer span { font-size: .5rem; letter-spacing: .16em; text-transform: uppercase
 
 <footer>
   <div class="w">
-    <span>&copy; 2026 Will Holdsworth</span>
+    <span>&copy; <span id="cpYear"></span> Will Holdsworth</span>
     <span></span>
   </div>
 </footer>
@@ -1079,6 +1079,8 @@ footer span { font-size: .5rem; letter-spacing: .16em; text-transform: uppercase
   const years = Math.floor((Date.now() - start) / (1000 * 60 * 60 * 24 * 365.25));
   const el = document.getElementById('expYears');
   if (el) el.textContent = years + '+';
+  const cy = document.getElementById('cpYear');
+  if (cy) cy.textContent = new Date().getFullYear();
 })();
 
 (function() {
