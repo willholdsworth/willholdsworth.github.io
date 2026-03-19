@@ -95,6 +95,8 @@ nav {
   font-size: .58rem; letter-spacing: .18em;
   text-transform: uppercase; color: var(--mid); line-height: 2;
 }
+.mob-br { display: none; }
+@media (max-width: 520px) and (orientation: portrait) { .mob-br { display: block; } }
 @keyframes rise { to { opacity:1; transform:none; } }
 @keyframes up { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:none; } }
 
@@ -565,8 +567,8 @@ footer span { font-size: .5rem; letter-spacing: .16em; text-transform: uppercase
       <span class="ln"><span>&amp; Strategy</span></span>
     </h1>
     <div class="hero-foot">
-      <p class="hero-role" style="max-width:min(490px,72%);">
-        Brand Positioning &nbsp;·&nbsp; 3D Design &amp; Animation &nbsp;·&nbsp; Strategic Marketing &nbsp;·&nbsp; Creative Direction &nbsp;·&nbsp; Videography/Photography
+      <p class="hero-role">
+        Brand Positioning &nbsp;·&nbsp; 3D Design &amp; Animation<span class="mob-br"></span>&nbsp;·&nbsp; Strategic Marketing &nbsp;·&nbsp; Creative Direction<span class="mob-br"></span>&nbsp;·&nbsp; Videography/Photography
       </p>
     </div>
   </div>
