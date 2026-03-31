@@ -6,7 +6,14 @@
 <title>Will Holdsworth Folio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://video.wixstatic.com">
+<link rel="preconnect" href="https://static.wixstatic.com">
+<link rel="preconnect" href="https://raw.githubusercontent.com">
+<link rel="dns-prefetch" href="https://video.wixstatic.com">
+<link rel="dns-prefetch" href="https://static.wixstatic.com">
+<link rel="dns-prefetch" href="https://raw.githubusercontent.com">
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300;1,400&family=Geist:wght@300;400&display=swap">
+<link rel="preload" as="video" href="https://raw.githubusercontent.com/willholdsworth/willholdsworth.github.io/main/images/hero_sequence_1.mp4" type="video/mp4">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300;1,400&family=Geist:wght@300;400&display=swap" rel="stylesheet">
 <style>
 @font-face {
@@ -50,9 +57,7 @@ nav {
   min-height: 110px;
 }
 .n-logo-wrap { overflow: visible; }
-.n-logo {
-  display: block; height: 100px; width: auto;
-}
+.n-logo { display: block; height: 100px; width: auto; }
 .n-links { display: flex; gap: 2.2rem; align-items: center; }
 .n-links a {
   font-size: .56rem; letter-spacing: .2em; text-transform: uppercase;
@@ -65,9 +70,7 @@ nav {
   display: flex; flex-direction: column; justify-content: flex-end;
   padding: 0 var(--gutter) 5rem; overflow: hidden;
 }
-.hero-vid-wrap {
-  position: absolute; inset: 0;
-}
+.hero-vid-wrap { position: absolute; inset: 0; }
 .hero-vid-wrap video {
   width: 100%; height: 100%; object-fit: cover; opacity: .42;
   mix-blend-mode: multiply; display: block;
@@ -98,10 +101,7 @@ nav {
 .hero-h .ln:nth-child(2) span { animation-delay: .2s; }
 .hero-h .ln:nth-child(3) span { animation-delay: .32s; }
 .hero-h em { font-style: italic; font-weight: 300; }
-.hero-foot {
-  margin-top: 2.5rem;
-  opacity: 0; animation: up .9s ease .55s forwards;
-}
+.hero-foot { margin-top: 2.5rem; opacity: 0; animation: up .9s ease .55s forwards; }
 .hero-role {
   font-size: .58rem; letter-spacing: .18em;
   text-transform: uppercase; color: var(--mid); line-height: 2;
@@ -138,30 +138,20 @@ nav {
 .sp { height: var(--gap); }
 .sp-lg { height: 2rem; }
 
-.g-banner {
-  width: 100%; border-radius: var(--r); overflow: hidden;
-}
+.g-banner { width: 100%; border-radius: var(--r); overflow: hidden; }
 .g-banner img, .g-banner video {
   width: 100%; height: auto; max-height: 70vh;
   object-fit: cover; display: block;
 }
 .g-banner.dark { background: #0d0c0a; }
 
-.g-free {
-  width: 100%; border-radius: var(--r); overflow: hidden;
-}
+.g-free { width: 100%; border-radius: var(--r); overflow: hidden; }
 .g-free img, .g-free video { width: 100%; height: auto; display: block; }
 .g-free.dark { background: #0d0c0a; }
 
-.g-pair {
-  display: flex; gap: var(--gap); align-items: stretch;
-}
-.g-pair .c {
-  overflow: hidden; border-radius: var(--r); min-width: 0; flex: 1;
-}
-.g-pair .c img, .g-pair .c video {
-  width: 100%; height: 100%; object-fit: cover; display: block;
-}
+.g-pair { display: flex; gap: var(--gap); align-items: stretch; }
+.g-pair .c { overflow: hidden; border-radius: var(--r); min-width: 0; flex: 1; }
+.g-pair .c img, .g-pair .c video { width: 100%; height: 100%; object-fit: cover; display: block; }
 .g-pair .c.dark { background: #0d0c0a; }
 .g-pair.h-sm { height: 34vh; }
 .g-pair.h-md { height: 46vh; }
@@ -173,68 +163,35 @@ nav {
 .g-pair .f15 { flex: 1.5; }
 .g-pair .f2  { flex: 2; }
 
-.g-trio {
-  display: flex; gap: var(--gap); align-items: stretch;
-}
-.g-trio .c {
-  overflow: hidden; border-radius: var(--r); flex: 1; min-width: 0;
-}
-.g-trio .c img, .g-trio .c video {
-  width: 100%; height: 100%; object-fit: cover; display: block;
-}
+.g-trio { display: flex; gap: var(--gap); align-items: stretch; }
+.g-trio .c { overflow: hidden; border-radius: var(--r); flex: 1; min-width: 0; }
+.g-trio .c img, .g-trio .c video { width: 100%; height: 100%; object-fit: cover; display: block; }
 .g-trio .c.dark { background: #0d0c0a; }
 .g-trio.h-sm { height: 30vh; }
 .g-trio.h-md { height: 42vh; }
 .g-trio.h-lg { height: 54vh; }
 
-
-.fading-gallery {
-  position: relative; overflow: hidden; border-radius: var(--r);
-  user-select: none;
-}
-.fading-gallery-track {
-  display: flex; align-items: stretch;
-}
-.fading-gallery-slide {
-  flex: 0 0 100%; min-width: 0;
-  position: relative;
-  transition: opacity .6s ease;
-}
-.fading-gallery-slide img {
-  width: 100%; height: auto; display: block; border-radius: var(--r);
-}
+.fading-gallery { position: relative; overflow: hidden; border-radius: var(--r); user-select: none; }
+.fading-gallery-track { display: flex; align-items: stretch; }
+.fading-gallery-slide { flex: 0 0 100%; min-width: 0; position: relative; transition: opacity .6s ease; }
+.fading-gallery-slide img { width: 100%; height: auto; display: block; border-radius: var(--r); }
 .fading-gallery-slide.active { opacity: 1; z-index: 2; }
-.fading-gallery-slide.prev   { opacity: 0; z-index: 1; position: absolute; inset: 0; }
+.fading-gallery-slide.prev { opacity: 0; z-index: 1; position: absolute; inset: 0; }
 .fading-gallery-slide.prev img { width: 100%; height: 100%; object-fit: cover; }
 
-.fg-wrapper {
-  border-radius: var(--r);
-}
+.fg-wrapper { border-radius: var(--r); }
 .fg-slides {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 3/1.2;
-  border-radius: var(--r);
-  overflow: hidden;
+  position: relative; width: 100%; aspect-ratio: 3/1.2;
+  border-radius: var(--r); overflow: hidden;
 }
 #harrods-slides { aspect-ratio: 1.85/1; }
 .fg-slide {
-  position: absolute; inset: 0;
-  opacity: 0;
-  transition: opacity .85s ease;
-  pointer-events: none;
+  position: absolute; inset: 0; opacity: 0;
+  transition: opacity .85s ease; pointer-events: none;
 }
-.fg-slide img {
-  width: 100%; height: 100%;
-  object-fit: cover; display: block;
-}
-.fg-slide.on {
-  opacity: 1;
-  pointer-events: auto;
-}
-.fg-dots {
-  display: flex; gap: .5rem; justify-content: center; margin-top: .75rem;
-}
+.fg-slide img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.fg-slide.on { opacity: 1; pointer-events: auto; }
+.fg-dots { display: flex; gap: .5rem; justify-content: center; margin-top: .75rem; }
 .fg-dot {
   width: 6px; height: 6px; border-radius: 50%;
   background: var(--faint); border: none; cursor: pointer;
@@ -242,35 +199,19 @@ nav {
 }
 .fg-dot.on { background: var(--mid); }
 
-.g-rings {
-  display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--gap);
-}
-.g-rings .c {
-  aspect-ratio: 4/3; overflow: hidden; border-radius: var(--r);
-}
+.g-rings { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--gap); }
+.g-rings .c { aspect-ratio: 4/3; overflow: hidden; border-radius: var(--r); }
 .g-rings .c img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
-.g-logos {
-  display: flex; gap: 4rem; justify-content: center;
-  padding: 2rem 0;
-}
-.g-logos .c {
-  flex: 0 1 180px; border-radius: var(--r); overflow: hidden;
-}
+.g-logos { display: flex; gap: 4rem; justify-content: center; padding: 2rem 0; }
+.g-logos .c { flex: 0 1 180px; border-radius: var(--r); overflow: hidden; }
 .g-logos .c img { width: 100%; height: auto; display: block; }
 
-.g-phones {
-  display: flex; gap: 1.5rem; justify-content: space-between; align-items: flex-start;
-}
-.g-phones .c {
-  flex: 1; border-radius: var(--r); overflow: hidden;
-  display: flex; justify-content: center;
-}
+.g-phones { display: flex; gap: 1.5rem; justify-content: space-between; align-items: flex-start; }
+.g-phones .c { flex: 1; border-radius: var(--r); overflow: hidden; display: flex; justify-content: center; }
 .g-phones .c img { width: 100%; height: auto; display: block; }
 
-.g-contain {
-  max-width: 75%; border-radius: var(--r); overflow: hidden;
-}
+.g-contain { max-width: 75%; border-radius: var(--r); overflow: hidden; }
 .g-contain img, .g-contain video { width: 100%; height: auto; display: block; }
 .g-contain.dark { background: #0d0c0a; }
 .g-contain.centre { margin: 0 auto; }
@@ -278,8 +219,7 @@ nav {
 .vt-tabs { display: flex; gap: .5rem; margin-bottom: .75rem; }
 .vt-tab {
   font-size: .5rem; letter-spacing: .18em; text-transform: uppercase;
-  padding: .36rem .9rem;
-  border: 1px solid rgba(28,26,23,.25);
+  padding: .36rem .9rem; border: 1px solid rgba(28,26,23,.25);
   background: transparent; color: var(--mid); cursor: pointer;
   border-radius: 6px; transition: border-color .2s, color .2s;
 }
@@ -289,38 +229,29 @@ nav {
 .vt-panel video { width: 100%; height: auto; display: block; border-radius: var(--r); }
 .vt-panel.portrait { display: none; text-align: center; }
 .vt-panel.portrait.on { display: block; }
-.vt-panel.portrait video {
-  width: auto; max-height: 80vh; max-width: 100%; margin: 0 auto; border-radius: var(--r);
-}
+.vt-panel.portrait video { width: auto; max-height: 80vh; max-width: 100%; margin: 0 auto; border-radius: var(--r); }
 
 .bb-wrap { display: flex; flex-direction: column; align-items: center; }
 .bb-tabs { display: flex; gap: .5rem; margin-bottom: 1.2rem; }
 .bb-tab {
   font-size: .5rem; letter-spacing: .18em; text-transform: uppercase;
-  padding: .36rem .9rem;
-  border: 1px solid rgba(28,26,23,.25);
+  padding: .36rem .9rem; border: 1px solid rgba(28,26,23,.25);
   background: transparent; color: var(--mid); cursor: pointer;
   border-radius: 6px; transition: border-color .2s, color .2s;
 }
 .bb-tab.on { border-color: var(--ink); color: var(--ink); }
 .bb-frame {
-  margin: 0 auto;
-  position: relative;
-  background: #000;
-  padding: 10px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-  transition: all 0.3s ease;
-  overflow: hidden;
+  margin: 0 auto; position: relative; background: #000;
+  padding: 10px; box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  transition: all 0.3s ease; overflow: hidden;
 }
 .bb-frame.phone {
   width: 355px; height: 712px;
-  max-width: 90vw; max-height: calc(90vw * 2.006);
-  border-radius: 40px;
+  max-width: 90vw; max-height: calc(90vw * 2.006); border-radius: 40px;
 }
 .bb-frame.tablet {
   width: 768px; height: 600px;
-  max-width: 90vw; max-height: calc(90vw * 0.781);
-  border-radius: 20px;
+  max-width: 90vw; max-height: calc(90vw * 0.781); border-radius: 20px;
 }
 .bb-screen { width: 100%; height: 100%; background: #000; overflow: hidden; position: relative; transition: all 0.3s ease; }
 .bb-frame.phone .bb-screen { border-radius: 30px; }
@@ -404,13 +335,9 @@ nav {
 .about-subhead {
   font-family: var(--serif); font-style: italic;
   font-size: clamp(1rem, 1.6vw, 1.3rem);
-  line-height: 1.6; color: rgba(28,26,23,.6);
-  margin-bottom: 2.5rem;
+  line-height: 1.6; color: rgba(28,26,23,.6); margin-bottom: 2.5rem;
 }
-.about-formula {
-  border-top: 1px solid var(--faint);
-  padding-top: 2rem; margin-bottom: 2.5rem;
-}
+.about-formula { border-top: 1px solid var(--faint); padding-top: 2rem; margin-bottom: 2.5rem; }
 .about-formula-label {
   font-size: .5rem; letter-spacing: .22em; text-transform: uppercase;
   color: var(--mid); margin-bottom: .6rem; display: block;
@@ -418,19 +345,14 @@ nav {
 .about-formula-text {
   font-family: var(--serif); font-weight: 300;
   font-size: clamp(1.6rem, 2.5vw, 2.4rem);
-  letter-spacing: -.01em; color: var(--ink);
-  line-height: 1;
+  letter-spacing: -.01em; color: var(--ink); line-height: 1;
 }
 .about-formula-text em { font-style: italic; }
-.about-right {}
-.about-exp-block {
-  display: flex; align-items: baseline; gap: 1rem; margin-bottom: 2.5rem;
-}
+.about-exp-block { display: flex; align-items: baseline; gap: 1rem; margin-bottom: 2.5rem; }
 .about-exp-num {
   font-family: var(--serif); font-weight: 300;
   font-size: clamp(3rem, 5vw, 5rem);
-  line-height: 1; letter-spacing: -.03em; color: var(--ink);
-  flex-shrink: 0;
+  line-height: 1; letter-spacing: -.03em; color: var(--ink); flex-shrink: 0;
 }
 .about-exp-label {
   font-size: .54rem; letter-spacing: .2em; text-transform: uppercase;
@@ -438,20 +360,15 @@ nav {
 }
 .about-roles { margin-bottom: 2.5rem; }
 .about-role {
-  border-top: 1px solid var(--faint);
-  padding: 1.2rem 0;
-  display: grid; grid-template-columns: 1fr auto;
-  gap: 1rem; align-items: baseline;
+  border-top: 1px solid var(--faint); padding: 1.2rem 0;
+  display: grid; grid-template-columns: 1fr auto; gap: 1rem; align-items: baseline;
 }
 .about-role:last-child { border-bottom: 1px solid var(--faint); }
 .about-role-title {
   font-family: var(--serif); font-weight: 400;
-  font-size: .95rem; color: var(--ink); display: block;
-  margin-bottom: .2rem;
+  font-size: .95rem; color: var(--ink); display: block; margin-bottom: .2rem;
 }
-.about-role-co {
-  font-size: .62rem; color: var(--mid);
-}
+.about-role-co { font-size: .62rem; color: var(--mid); }
 .about-role-date {
   font-size: .52rem; letter-spacing: .12em; text-transform: uppercase;
   color: var(--mid); text-align: right; white-space: nowrap;
@@ -461,9 +378,7 @@ nav {
   font-size: .5rem; letter-spacing: .22em; text-transform: uppercase;
   color: var(--mid); display: block; margin-bottom: .7rem;
 }
-.about-tools-list {
-  font-size: .68rem; color: var(--mid); line-height: 2.4;
-}
+.about-tools-list { font-size: .68rem; color: var(--mid); line-height: 2.4; }
 
 .contact-grid {
   border-top: 1px solid var(--faint); padding: 7rem 0;
@@ -472,8 +387,7 @@ nav {
 .contact-h {
   font-family: var(--serif); font-weight: 300;
   font-size: clamp(3.5rem, 7vw, 8rem);
-  line-height: .88; letter-spacing: -.02em;
-  margin-bottom: 1.1rem; color: var(--ink);
+  line-height: .88; letter-spacing: -.02em; margin-bottom: 1.1rem; color: var(--ink);
 }
 .contact-h em { font-style: italic; }
 .contact-sub {
@@ -495,13 +409,9 @@ nav {
 .c-arr { color: var(--mid); transition: transform .18s, color .18s; font-size: .9rem; }
 .c-row:hover .c-arr { transform: translate(3px,-3px); color: var(--ink); }
 
-footer {
-  border-top: 1px solid var(--faint); padding: 1.4rem 0;
-}
+footer { border-top: 1px solid var(--faint); padding: 1.4rem 0; }
 footer .w { display: flex; justify-content: space-between; align-items: center; }
 footer span { font-size: .5rem; letter-spacing: .16em; text-transform: uppercase; color: var(--mid); }
-
-
 
 @media (max-width: 820px) {
   .proj-head { flex-direction: column; align-items: flex-start; gap: 1.5rem; }
@@ -517,12 +427,8 @@ footer span { font-size: .5rem; letter-spacing: .16em; text-transform: uppercase
   .about-grid { grid-template-columns: 1fr; gap: 3rem; }
   .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
   #vid-row-main { flex-direction: column; }
-  #vid-landscape-col, #vid-portrait-col {
-    width: 100% !important; height: auto !important;
-  }
-  #vid-landscape-col video, #vid-portrait-col video {
-    width: 100% !important; height: auto !important;
-  }
+  #vid-landscape-col, #vid-portrait-col { width: 100% !important; height: auto !important; }
+  #vid-landscape-col video, #vid-portrait-col video { width: 100% !important; height: auto !important; }
 }
 @media (max-width: 520px) {
   .n-links { gap: 1.2rem; }
@@ -535,8 +441,7 @@ footer span { font-size: .5rem; letter-spacing: .16em; text-transform: uppercase
   border: none; cursor: pointer;
   display: flex; align-items: center; justify-content: center;
   opacity: 0; pointer-events: none;
-  transition: opacity .3s, transform .3s;
-  font-size: .7rem;
+  transition: opacity .3s, transform .3s; font-size: .7rem;
 }
 .back-top.show { opacity: 1; pointer-events: auto; }
 .back-top:hover { transform: translateY(-3px); }
@@ -578,7 +483,7 @@ footer span { font-size: .5rem; letter-spacing: .16em; text-transform: uppercase
     </h1>
     <div class="hero-foot">
       <p class="hero-role">
-        Brand Positioning &nbsp;·&nbsp; 3D Design &amp; Animation &nbsp;·&nbsp; Videography/Photography &nbsp;·&nbsp; 
+        Brand Positioning &nbsp;·&nbsp; 3D Design &amp; Animation &nbsp;·&nbsp; Videography/Photography &nbsp;·&nbsp;
         Strategic Marketing &nbsp;·&nbsp; Creative Direction
       </p>
     </div>
@@ -627,7 +532,7 @@ footer span { font-size: .5rem; letter-spacing: .16em; text-transform: uppercase
   <div class="sp"></div>
 
   <div class="g-banner dark rv">
-    <video autoplay muted loop playsinline webkit-playsinline>
+    <video muted loop playsinline webkit-playsinline data-autoplay>
       <source src="https://video.wixstatic.com/video/4991c8_83527d70834849278c13dd93996ed548/1080p/mp4/file.mp4" type="video/mp4">
     </video>
   </div>
@@ -654,12 +559,12 @@ footer span { font-size: .5rem; letter-spacing: .16em; text-transform: uppercase
 
   <div style="display:flex;gap:var(--gap);align-items:flex-start;" id="vid-row-main">
     <div style="border-radius:var(--r);overflow:hidden;background:#0d0c0a;flex-shrink:0;" id="vid-landscape-col">
-      <video autoplay muted loop playsinline webkit-playsinline style="display:block;height:100%;width:auto;" id="vid-landscape">
+      <video muted loop playsinline webkit-playsinline style="display:block;height:100%;width:auto;" id="vid-landscape" data-autoplay>
         <source src="https://video.wixstatic.com/video/4991c8_ad440a4409174caa8016aaf6795f286d/1080p/mp4/file.mp4" type="video/mp4">
       </video>
     </div>
     <div style="border-radius:var(--r);overflow:hidden;background:#0d0c0a;flex-shrink:0;" id="vid-portrait-col">
-      <video autoplay muted loop playsinline webkit-playsinline style="display:block;height:100%;width:auto;" id="vid-portrait">
+      <video muted loop playsinline webkit-playsinline style="display:block;height:100%;width:auto;" id="vid-portrait" data-autoplay>
         <source src="https://video.wixstatic.com/video/4991c8_20948586df644cee89a416da72f12c69/1080p/mp4/file.mp4" type="video/mp4">
       </video>
     </div>
@@ -677,7 +582,7 @@ footer span { font-size: .5rem; letter-spacing: .16em; text-transform: uppercase
   <div class="sp"></div>
 
   <div style="width:100%;aspect-ratio:4.7/1;border-radius:var(--r);overflow:hidden;background:#0d0c0a;">
-    <video autoplay muted loop playsinline webkit-playsinline style="width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.08);transform-origin:center center;">
+    <video muted loop playsinline webkit-playsinline style="width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.08);transform-origin:center center;" data-autoplay>
       <source src="https://video.wixstatic.com/video/4991c8_894efd528f864f58a4136ce5726772bc/1080p/mp4/file.mp4" type="video/mp4">
     </video>
   </div>
@@ -703,7 +608,7 @@ footer span { font-size: .5rem; letter-spacing: .16em; text-transform: uppercase
       <img loading="lazy" src="https://www.willholdsworth.com/images/mv268.jpg" alt="Matthew Hill Bespoke brochure layflats" style="width:100%;height:100%;object-fit:cover;display:block;">
     </div>
     <div style="flex:0 0 auto;border-radius:var(--r);overflow:hidden;background:#0d0c0a;" id="vid-mhb-col">
-      <video autoplay muted loop playsinline webkit-playsinline style="width:100%;height:100%;object-fit:cover;display:block;" id="vid-mhb">
+      <video muted loop playsinline webkit-playsinline style="width:100%;height:100%;object-fit:cover;display:block;" id="vid-mhb" data-autoplay>
         <source src="https://video.wixstatic.com/video/4991c8_2dddc37f88b64ed3a758ec06c001bd0a/720p/mp4/file.mp4" type="video/mp4">
       </video>
     </div>
@@ -811,7 +716,7 @@ footer span { font-size: .5rem; letter-spacing: .16em; text-transform: uppercase
   <div class="sp"></div>
 
   <div class="g-banner dark rv d1">
-    <video autoplay muted loop playsinline webkit-playsinline style="width:100%;height:auto;display:block;">
+    <video muted loop playsinline webkit-playsinline style="width:100%;height:auto;display:block;" data-autoplay>
       <source src="https://video.wixstatic.com/video/4991c8_ad571d3d1fb54e8ea1cfb37c15d9de59/1080p/mp4/file.mp4" type="video/mp4">
     </video>
   </div>
@@ -848,13 +753,13 @@ footer span { font-size: .5rem; letter-spacing: .16em; text-transform: uppercase
     </div>
     <div class="vt-panel on" id="vl">
       <div style="width:100%;aspect-ratio:16/9;border-radius:var(--r);overflow:hidden;">
-        <video autoplay muted loop playsinline webkit-playsinline style="width:100%;height:100%;object-fit:cover;display:block;">
+        <video muted loop playsinline webkit-playsinline style="width:100%;height:100%;object-fit:cover;display:block;" data-autoplay>
           <source src="https://video.wixstatic.com/video/4991c8_268e8cbd52f6450f8eec3237a1acae03/1080p/mp4/file.mp4" type="video/mp4">
         </video>
       </div>
     </div>
     <div class="vt-panel portrait" id="vp">
-      <video autoplay muted loop playsinline webkit-playsinline>
+      <video muted loop playsinline webkit-playsinline data-autoplay>
         <source src="https://video.wixstatic.com/video/4991c8_240e87751d904adb9e67a4c479f11b18/1080p/mp4/file.mp4" type="video/mp4">
       </video>
     </div>
@@ -886,7 +791,7 @@ footer span { font-size: .5rem; letter-spacing: .16em; text-transform: uppercase
   <div class="sp"></div>
 
   <div class="g-banner dark rv d1">
-    <video autoplay muted loop playsinline webkit-playsinline>
+    <video muted loop playsinline webkit-playsinline data-autoplay>
       <source src="https://video.wixstatic.com/video/4991c8_57935e3a94fc4479bce5cfb57f22a406/1080p/mp4/file.mp4" type="video/mp4">
     </video>
   </div>
@@ -991,7 +896,7 @@ footer span { font-size: .5rem; letter-spacing: .16em; text-transform: uppercase
   <div class="sp"></div>
 
   <div class="g-free dark rv d2">
-    <video autoplay muted loop playsinline webkit-playsinline style="border-radius:var(--r);">
+    <video muted loop playsinline webkit-playsinline style="border-radius:var(--r);" data-autoplay>
       <source src="https://video.wixstatic.com/video/4991c8_87e04190cb6642e7a12a666424492a06/1080p/mp4/file.mp4" type="video/mp4">
     </video>
   </div>
@@ -1099,30 +1004,23 @@ footer span { font-size: .5rem; letter-spacing: .16em; text-transform: uppercase
   if (cy) cy.textContent = new Date().getFullYear();
 })();
 
-(function() {
-  function tryPlay() {
-    document.querySelectorAll('video[autoplay]').forEach(function(v) {
-      if (v.paused) {
-        var p = v.play();
-        if (p && p.catch) p.catch(function(){});
-      }
-    });
-  }
-  document.addEventListener('DOMContentLoaded', tryPlay);
-  setTimeout(tryPlay, 500);
-  document.addEventListener('touchstart', function onTouch() {
-    tryPlay();
-    document.removeEventListener('touchstart', onTouch);
-  }, { once: true });
-})();
+document.querySelectorAll('img').forEach(function(el) { el.loading = 'lazy'; });
+
+document.querySelectorAll('video[data-autoplay]').forEach(function(v) {
+  new IntersectionObserver(function(entries, obs) {
+    if (!entries[0].isIntersecting) return;
+    v.setAttribute('autoplay', '');
+    v.load();
+    v.play().catch(function(){});
+    obs.disconnect();
+  }, { rootMargin: '200px' }).observe(v);
+});
 
 function doScroll(id) {
   const el = document.getElementById(id);
   if (!el) return;
-  let settled = false;
   let lastH = document.body.scrollHeight;
   let attempts = 0;
-
   function tryScroll() {
     const h = document.body.scrollHeight;
     if (h === lastH || attempts > 20) {
@@ -1130,24 +1028,20 @@ function doScroll(id) {
       while (node) { top += node.offsetTop || 0; node = node.offsetParent; }
       window.scrollTo({ top: top - 32, behavior: 'smooth' });
     } else {
-      lastH = h;
-      attempts++;
+      lastH = h; attempts++;
       setTimeout(tryScroll, 80);
     }
   }
-
   tryScroll();
 }
 
-function scrollTo_(e, id) {
-  e.preventDefault();
-  doScroll(id);
-}
+function scrollTo_(e, id) { e.preventDefault(); doScroll(id); }
 
 const heroVid = document.getElementById('heroVid');
 const heroGrad = document.getElementById('heroGrad');
 const heroEl = document.getElementById('hero');
 const backTop = document.getElementById('backTop');
+let ticking = false;
 function onScroll() {
   const sy = window.scrollY;
   const progress = Math.min(sy / (heroEl.offsetHeight * 0.6), 1);
@@ -1155,24 +1049,23 @@ function onScroll() {
   heroGrad.style.opacity = 1 - progress * 0.7;
   backTop.classList.toggle('show', sy > 600);
 }
-window.addEventListener('scroll', onScroll, { passive: true });
+window.addEventListener('scroll', function() {
+  if (ticking) return;
+  ticking = true;
+  requestAnimationFrame(function() { onScroll(); ticking = false; });
+}, { passive: true });
 
 function switchVid(btn, id) {
-  document.querySelectorAll('.vt-tab').forEach(b => b.classList.remove('on'));
-  document.querySelectorAll('.vt-panel').forEach(p => p.classList.remove('on'));
+  document.querySelectorAll('.vt-tab').forEach(function(b) { b.classList.remove('on'); });
+  document.querySelectorAll('.vt-panel').forEach(function(p) { p.classList.remove('on'); });
   btn.classList.add('on');
   document.getElementById(id).classList.add('on');
 }
 
 function setBB(btn, t) {
-  document.querySelectorAll('.bb-tab').forEach(b => b.classList.remove('on'));
+  document.querySelectorAll('.bb-tab').forEach(function(b) { b.classList.remove('on'); });
   btn.classList.add('on');
-  const f = document.getElementById('bbFrame');
-  if (t === 'phone') {
-    f.className = 'bb-frame phone';
-  } else {
-    f.className = 'bb-frame tablet';
-  }
+  document.getElementById('bbFrame').className = 'bb-frame ' + t;
 }
 
 function initGallery(slidesId, dotsId, intervalMs) {
@@ -1180,18 +1073,15 @@ function initGallery(slidesId, dotsId, intervalMs) {
   const slides = Array.from(container.querySelectorAll('.fg-slide'));
   const dotsEl = document.getElementById(dotsId);
   let current = 0;
-
-  slides.forEach((s, i) => {
+  slides.forEach(function(s, i) {
     s.classList.remove('on');
     const d = document.createElement('button');
     d.className = 'fg-dot';
-    d.onclick = () => goTo(i);
+    d.onclick = function() { goTo(i); };
     dotsEl.appendChild(d);
   });
-
   slides[0].classList.add('on');
   dotsEl.children[0].classList.add('on');
-
   function goTo(next) {
     next = (next + slides.length) % slides.length;
     if (next === current) return;
@@ -1201,52 +1091,43 @@ function initGallery(slidesId, dotsId, intervalMs) {
     slides[current].classList.add('on');
     dotsEl.children[current].classList.add('on');
   }
-
-  setInterval(() => goTo(current + 1), intervalMs);
+  setInterval(function() { goTo(current + 1); }, intervalMs);
 }
 
 function syncVideoRows() {
   const row = document.getElementById('vid-row-main');
   const landCol = document.getElementById('vid-landscape-col');
   const portCol = document.getElementById('vid-portrait-col');
-  const landVid = document.getElementById('vid-landscape');
-  const portVid = document.getElementById('vid-portrait');
   const mhbRow = document.getElementById('vid-row-mhb');
   const mhbVidCol = document.getElementById('vid-mhb-col');
 
   function syncMain() {
-    if (!row || !landVid || !portVid) return;
+    if (!row || !landCol || !portCol) return;
     const rowW = row.offsetWidth;
     const gap = parseFloat(getComputedStyle(row).gap) || 20;
-    const landAR = 16/9;
-    const portAR = 9/16;
-    const totalAR = landAR + portAR;
+    const totalAR = (16/9) + (9/16);
     const h = (rowW - gap) / totalAR;
-    landCol.style.width = (h * landAR) + 'px';
+    landCol.style.width = (h * (16/9)) + 'px';
     landCol.style.height = h + 'px';
-    portCol.style.width = (h * portAR) + 'px';
+    portCol.style.width = (h * (9/16)) + 'px';
     portCol.style.height = h + 'px';
   }
 
   function matchMhb() {
     if (!mhbRow || !mhbVidCol) return;
-    const rowH = mhbRow.offsetHeight;
-    const maxW = mhbRow.offsetWidth * 0.45;
-    const w = Math.min(rowH * 1, maxW);
-    if (w > 0) {
-      mhbVidCol.style.width = w + 'px';
-    }
+    const w = Math.min(mhbRow.offsetHeight, mhbRow.offsetWidth * 0.45);
+    if (w > 0) mhbVidCol.style.width = w + 'px';
   }
 
   function run() { syncMain(); matchMhb(); }
 
-  if (landVid) {
-    landVid.addEventListener('loadedmetadata', run);
-    landVid.addEventListener('loadeddata', run);
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(run).observe(document.body);
+  } else {
+    window.addEventListener('resize', run);
   }
 
-  [100, 400, 1000].forEach(t => setTimeout(run, t));
-  window.addEventListener('resize', run);
+  setTimeout(run, 100);
 }
 
 initGallery('harrods-slides', 'harrods-dots', 3200);
