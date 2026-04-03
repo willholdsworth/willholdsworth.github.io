@@ -4,18 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Will Holdsworth Folio</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://video.wixstatic.com">
 <link rel="preconnect" href="https://static.wixstatic.com">
 <link rel="preconnect" href="https://raw.githubusercontent.com">
-<link rel="dns-prefetch" href="https://video.wixstatic.com">
-<link rel="dns-prefetch" href="https://static.wixstatic.com">
-<link rel="dns-prefetch" href="https://raw.githubusercontent.com">
-<link rel="preload" as="video" href="https://raw.githubusercontent.com/willholdsworth/willholdsworth.github.io/main/images/hero_sequence_1.mp4" type="video/mp4">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300;1,400&family=Geist:wght@300;400&display=block" rel="stylesheet">
+
+<link rel="preload" as="video" href="https://raw.githubusercontent.com/willholdsworth/willholdsworth.github.io/main/images/hero_sequence_1.mp4" type="video/mp4" fetchpriority="high">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300;1,400&family=Geist:wght@300;400&display=swap" rel="stylesheet">
 
 <link rel="icon" type="image/jpeg" href="https://www.willholdsworth.com/images/4991c8_e523521dae734948a204c94e73a185d9mv2copy.jpg">
+
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; scroll-padding-top: 2rem; }
@@ -25,7 +26,12 @@ body {
   font-family: 'Geist', sans-serif;
   font-weight: 300;
   overflow-x: hidden;
+  opacity: 0; 
+  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+body.loaded { opacity: 1; }
+
 img, video { display: block; }
 a { color: inherit; text-decoration: none; }
 :root {
@@ -39,7 +45,6 @@ a { color: inherit; text-decoration: none; }
   --max: 1280px;
   --serif: 'Cormorant', Georgia, serif;
 }
-body { opacity: 0; transition: opacity 0.4s ease; }
 
 nav {
   position: absolute; top: 0; left: 0; right: 0; z-index: 300;
@@ -253,6 +258,7 @@ nav {
 .bb-frame.tablet .bb-inner { width: 748px; height: 580px; margin: 0 auto; }
 .bb-frame.phone .bb-inner iframe { width: 375px; height: 812px; transform: scale(0.893); transform-origin: 0 0; }
 .bb-frame.tablet .bb-inner iframe { width: 1024px; height: 768px; transform: scale(0.73); transform-origin: 0 0; }
+
 @media (max-width: 1380px) {
   .bb-frame.phone { width: 330px; height: 662px; }
   .bb-frame.tablet { width: 700px; height: 547px; }
@@ -986,12 +992,6 @@ footer span { font-size: .5rem; letter-spacing: .16em; text-transform: uppercase
 </footer>
 
 <script>
-window.addEventListener('load', function() {
-  document.fonts.ready.then(function() {
-    document.body.style.opacity = '1';
-  });
-});
-
 (function() {
   const start = new Date(2014, 2, 1);
   const years = Math.floor((Date.now() - start) / (1000 * 60 * 60 * 24 * 365.25));
@@ -1001,56 +1001,52 @@ window.addEventListener('load', function() {
   if (cy) cy.textContent = new Date().getFullYear();
 })();
 
-document.querySelectorAll('img').forEach(function(el) { el.loading = 'lazy'; });
-
-document.querySelectorAll('video[data-autoplay]').forEach(function(v) {
-  new IntersectionObserver(function(entries, obs) {
-    if (!entries[0].isIntersecting) return;
-    v.setAttribute('autoplay', '');
-    v.load();
-    v.play().catch(function(){});
-    obs.disconnect();
-  }, { rootMargin: '200px' }).observe(v);
-});
-
-function doScroll(id) {
-  const el = document.getElementById(id);
-  if (!el) return;
-  let lastH = document.body.scrollHeight;
-  let attempts = 0;
-  function tryScroll() {
-    const h = document.body.scrollHeight;
-    if (h === lastH || attempts > 20) {
-      let top = 0, node = el;
-      while (node) { top += node.offsetTop || 0; node = node.offsetParent; }
-      window.scrollTo({ top: top - 32, behavior: 'smooth' });
-    } else {
-      lastH = h; attempts++;
-      setTimeout(tryScroll, 80);
-    }
+document.addEventListener('DOMContentLoaded', function() {
+  if (document.fonts) {
+    document.fonts.ready.then(function() {
+      document.body.classList.add('loaded');
+    });
+  } else {
+    document.body.classList.add('loaded');
   }
-  tryScroll();
-}
-
-function scrollTo_(e, id) { e.preventDefault(); doScroll(id); }
+});
 
 const heroVid = document.getElementById('heroVid');
 const heroGrad = document.getElementById('heroGrad');
 const heroEl = document.getElementById('hero');
 const backTop = document.getElementById('backTop');
 let ticking = false;
+
 function onScroll() {
   const sy = window.scrollY;
-  const progress = Math.min(sy / (heroEl.offsetHeight * 0.6), 1);
-  heroVid.style.opacity = 1 - progress;
-  heroGrad.style.opacity = 1 - progress * 0.7;
+  const h = heroEl.offsetHeight;
+  if (sy < h) {
+    const progress = Math.min(sy / (h * 0.6), 1);
+    heroVid.style.opacity = 1 - progress;
+    heroGrad.style.opacity = 1 - progress * 0.7;
+  }
   backTop.classList.toggle('show', sy > 600);
 }
+
 window.addEventListener('scroll', function() {
-  if (ticking) return;
-  ticking = true;
-  requestAnimationFrame(function() { onScroll(); ticking = false; });
+  if (!ticking) {
+    window.requestAnimationFrame(function() {
+      onScroll();
+      ticking = false;
+    });
+    ticking = true;
+  }
 }, { passive: true });
+
+function doScroll(id) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  let top = 0, node = el;
+  while (node) { top += node.offsetTop || 0; node = node.offsetParent; }
+  window.scrollTo({ top: top - 32, behavior: 'smooth' });
+}
+
+function scrollTo_(e, id) { e.preventDefault(); doScroll(id); }
 
 function switchVid(btn, id) {
   document.querySelectorAll('.vt-tab').forEach(function(b) { b.classList.remove('on'); });
@@ -1123,9 +1119,17 @@ function syncVideoRows() {
   } else {
     window.addEventListener('resize', run);
   }
-
   setTimeout(run, 100);
 }
+
+document.querySelectorAll('video[data-autoplay]').forEach(function(v) {
+  new IntersectionObserver(function(entries, obs) {
+    if (!entries[0].isIntersecting) return;
+    v.setAttribute('autoplay', '');
+    v.play().catch(function(){});
+    obs.disconnect();
+  }, { rootMargin: '100px' }).observe(v);
+});
 
 initGallery('harrods-slides', 'harrods-dots', 3200);
 initGallery('rings-slides', 'rings-dots', 2800);
